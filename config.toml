@@ -1,0 +1,3 @@
+baseURL = "https://clojure.fun/"
+languageCode = "en-us"
+title = "Clojure Fun"
