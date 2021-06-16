@@ -1,3 +1,47 @@
-baseURL = "https://clojure.fun/"
-languageCode = "en-us"
-title = "Clojure Fun"
+baseURL = "https://clojure.fun"
+defaultContentLanguage = "en"
+hasCJKLanguage = true
+languageCode = "en"
+paginate = 5
+theme = "hugo-theme-texify"
+title = "Clojure for fun"
+
+disqusShortname = ""
+googleAnalytics = ""
+pygmentsUseClasses = true
+
+[author]
+name = "littleli"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  identifier = "post"
+  name = "Recent"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "/post/"
+  weight = 2
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 3
+
+[params]
+  customCSS = []
+  dateFormat = "2006-01-02"
+  description = "Clojure for fun"
+  enableFullRSS = true
+  enableHanEmph = true
+  enableMathjax = true
+  favicon = "/favicon.ico"
+  footnote = "Follow me on <a class=link href=https://github.com/littleli>GitHub</a> | <a class=link href=/index.xml>RSS</a> | <a class=link href=https://creativecommons.org/licenses/by-sa/4.0/deed.en target=_blank rel=noopener>CC BY-SA 4.0</a>"
+  keywords = ["hugo", "latex", "theme"]
